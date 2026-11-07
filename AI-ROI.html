@@ -421,7 +421,10 @@ html, body {
   font-optical-sizing: auto;
   text-rendering: optimizeLegibility;
 }
-
+body {
+  min-height: 100dvh; /* Fits mobile & desktop screens perfectly */
+  width: 100%;        /* Avoids 100vw, which can cause horizontal scrolling */
+}
 .widget-container {
   width: 70% !important;
   max-width: 80% !important;
